@@ -2,15 +2,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-#outer{
-    height: 100vh;
-    display: flex;
-}
-
-#strech{
-    display: flex;
-}
-
 .custom-text-2rem{
     font-size: 2rem;
 }
@@ -23,6 +14,10 @@ body{
     margin-top: 6rem;
 }
 
-#myRow{
+#outer{
+   height: 100vh;
+   display: flex;
+}
+#frontContainer{
     
 }
