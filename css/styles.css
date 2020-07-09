@@ -7,6 +7,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.view{
+    position: relative;
+    height: 100%;
+}
 .custom-text-2rem{
     font-size: 2rem;
 }
@@ -43,18 +47,54 @@ body{
 }
 
 #outer{
+    position: relative;
+    z-index: 4;
     height: 100%;
-    background-color: #163ef2;
     transform: skew(0deg, -20deg);
-    text-align: center;
+    background-color: #163ef2;
     display: flex; 
   }
 
-#inner{
-transform: skew(0deg, 20deg);
+ 
+
+#outer2{
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    transform: skew(0deg, 20deg);
+    background-color: #163ef2;
+    display: flex;
 }
 
 
+
+#outer3{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    transform: skew(0deg, -20deg);
+    background-color: #163ef2;
+    display: flex;
+}
+
+#outer4{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    transform: skew(0deg, 20deg);
+    background-color: #163ef2;
+    display: flex;
+}
+
+#inner{
+transform: skew(0deg, 20deg);
+
+}
+
+#inner2{
+    transform: skew(0deg, -20deg);
+    
+    }
 
 .mouse{
     width: 2rem;
@@ -75,15 +115,15 @@ transform: skew(0deg, 20deg);
     animation: move-wheel 1.5s linear 1s infinite;
 }
 
-#test{
-    position: relative;
-    z-index: 1;
-}
 
 @media only screen and (max-width: 576px){
-    #outer{
-        
-    }
+  #inner{
+      margin-bottom: 30%;
+  }
+
+  #scroll{
+      display: none;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -98,6 +138,15 @@ transform: skew(0deg, 20deg);
     #title{
         font-size: 1rem;
     }
+  }
+
+  @media only screen and (max-width: 321px){
+      .custom-button-xs{
+          margin-top: 0.25rem !important;
+          font-size: 0.75rem;
+          padding-top: 0.5rem !important;
+          padding-bottom: 0.5rem !important;
+      }
   }
 
   @keyframes move-wheel{
