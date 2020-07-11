@@ -53,11 +53,31 @@ body{
     text-decoration: none;
 }
 
+.custom-icon-container{
+    background-color: #f8f9fa;
+    height: 7.5rem;
+    width: 7.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    
+    
+}
+
+.custom-icon{
+    font-size: 4rem;
+    margin: 0 auto;
+    color: #163ef2;
+    
+}
+
+
+
 #outer{
     position: relative;
-    z-index: 4;
+    z-index: 1;
     height: 100%;
-    transform: skew(0deg, -20deg);
+    transform: skew(0deg, -15deg);
     background-color: #163ef2;
     display: flex; 
   }
@@ -66,9 +86,9 @@ body{
 
 #outer2{
     position: relative;
-    z-index: 3;
+    z-index: 2;
     height: 100%;
-    transform: skew(0deg, 20deg);
+    transform: skew(0deg, 15deg);
     background-color: #163ef2;
     display: flex;
 }
@@ -77,30 +97,30 @@ body{
 
 #outer3{
     position: relative;
-    z-index: 2;
+    z-index: 3;
     height: 100%;
-    transform: skew(0deg, -20deg);
+    transform: skew(0deg, -15deg);
     background-color: #163ef2;
     display: flex;
 }
 
 #outer4{
     position: relative;
-    z-index: 1;
+    z-index: 4;
     height: 100%;
-    transform: skew(0deg, 20deg);
+    transform: skew(0deg, 15deg);
     background-color: #163ef2;
     display: flex;
 }
 
 #inner{
-transform: skew(0deg, 20deg);
+transform: skew(0deg, 15deg);
 
 }
 
 #inner2{
-    transform: skew(0deg, -20deg);
-
+    transform: skew(0deg, -15deg);
+    
     }
 
 .mouse{
@@ -122,22 +142,34 @@ transform: skew(0deg, 20deg);
     animation: move-wheel 1.5s linear 1s infinite;
 }
 
+@media only screen and (max-width: 680px){
+    #ic1,#ic2,#ic3{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    #i1,#i2,#i3{
+        font-size: 2.67rem;
+    }
+}
 
 @media only screen and (max-width: 576px){
-  #inner{
-      margin-bottom: 30%;
+    #inner{
+        margin-bottom: 30%;
   }
 
-  #scroll{
-      display: none;
+    #scroll{
+        display: none;
+  }
+
+  #row2{
+      margin-top: -3rem !important;
   }
 }
 
-@media only screen and (max-width: 420px) {
-    #outer{
-        padding-bottom: 0;
-    }
 
+
+@media only screen and (max-width: 525px) {
     #name {
         font-size: 2rem;
     }
@@ -153,6 +185,16 @@ transform: skew(0deg, 20deg);
           font-size: 0.75rem;
           padding-top: 0.5rem !important;
           padding-bottom: 0.5rem !important;
+      }
+
+      #ic1,#ic2,#ic3{
+          height: 4.5rem;
+          width: 4.5rem;
+          margin-bottom: 0rem !important
+      }
+
+      #i1,#i2,#i3{
+          font-size: 2.41rem;
       }
   }
 
