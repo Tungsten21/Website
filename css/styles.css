@@ -73,6 +73,7 @@ body{
     margin-top: 1rem;
     margin-bottom: 0 !important;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #outer{
@@ -88,14 +89,16 @@ body{
 
 #outer2{
     position: relative;
-    z-index: 2;
+    z-index: 5;
     height: 100%;
     transform: skew(0deg, 15deg);
     background-color: #163ef2;
     display: flex;
 }
 
-
+#about{
+    font-size: 1.25rem;
+}
 
 #outer3{
     position: relative;
@@ -144,15 +147,21 @@ transform: skew(0deg, 15deg);
     animation: move-wheel 1.5s linear 1s infinite;
 }
 
-@media only screen and (max-width: 1050px) and (min-width: 992px){
+@media only screen and (max-width: 1100px) and (min-width: 992px){
     #c1,#c2,#c3{
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 680px){
     #c1,#c2,#c3{
         font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    #about{
+        font-size: 1.1rem;
     }
 }
 
@@ -171,7 +180,7 @@ transform: skew(0deg, 15deg);
     }
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 575px){
     #inner{
         margin-bottom: 30%;
   }
@@ -181,7 +190,20 @@ transform: skew(0deg, 15deg);
   }
 
   #row2{
-      margin-top: -3rem !important;
+        margin-top: -1.5rem !important;
+  }
+
+  #row3{
+      margin-top: -2rem !important;
+  }
+
+  #about{
+    font-size: 1rem;  
+  }
+
+  #c1,#c2,#c3{
+    margin-bottom: -1rem !important;
+    margin-top: 0.25rem !important;
   }
 }
 
@@ -193,6 +215,10 @@ transform: skew(0deg, 15deg);
 
     #title{
         font-size: 1rem;
+    }
+
+    #about{
+        font-size: 0.8rem;
     }
   }
 
@@ -212,7 +238,13 @@ transform: skew(0deg, 15deg);
 
       #i1,#i2,#i3{
           font-size: 2.41rem;
-      }
+      
+        }
+
+        #c1,#c2,#c3{
+            font-size: 0.8rem;
+        }
+
   }
 
   @keyframes move-wheel{
