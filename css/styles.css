@@ -207,6 +207,15 @@ transform: skew(0deg, 15deg);
     margin-bottom: -1rem !important;
     margin-top: 0.25rem !important;
   }
+ 
+  #name {
+    font-size: 3rem;
+}
+
+#title{
+    font-size: 1.5rem;
+}
+
 }
 
 
@@ -222,6 +231,11 @@ transform: skew(0deg, 15deg);
     #about{
         font-size: 0.8rem;
     }
+
+    .custom-button-sm{
+        padding-top: 0.7rem !important;
+        padding-right: 0.7rem !important;
+    }
   }
 
   @media only screen and (max-width: 321px){
@@ -233,18 +247,22 @@ transform: skew(0deg, 15deg);
       }
 
       #ic1,#ic2,#ic3{
-          height: 4.5rem;
-          width: 4.5rem;
+          height: 4rem;
+          width: 4rem;
           margin-bottom: 0rem !important
       }
 
       #i1,#i2,#i3{
-          font-size: 2.41rem;
+          font-size: 2.15rem;
       
         }
 
         #c1,#c2,#c3{
             font-size: 0.8rem;
+        }
+
+        #about{
+            font-size: 0.6rem;
         }
 
   }
